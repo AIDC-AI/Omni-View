@@ -1,0 +1,5 @@
+torchrun --nproc_per_node=4 --master_port=12345 -m eval.vlm.eval.vqa.evaluate_vsibench --model-path ./pretrained_model/BAGEL-7B-MoT/ --safetensor-path model.safetensors --dataset vsibench
+torchrun --nproc_per_node=4 --master_port=12345 -m eval.vlm.eval.vqa.evaluate_3dvqa --model-path ./pretrained_model/BAGEL-7B-MoT/ --safetensor-path model.safetensors --dataset sqa3d
+torchrun --nproc_per_node=4 --master_port=12345 -m eval.vlm.eval.vqa.evaluate_3dvqa --model-path ./pretrained_model/BAGEL-7B-MoT/ --safetensor-path model.safetensors --dataset scanqa
+torchrun --nproc_per_node=4 --master_port=12345 -m eval.vlm.eval.vqa.evaluate_3dvqa --model-path ./pretrained_model/BAGEL-7B-MoT/ --safetensor-path model.safetensors --dataset scanrefer
+torchrun --nproc_per_node=4 --master_port=12345 -m eval.vlm.eval.vqa.evaluate_3dvqa --model-path ./pretrained_model/BAGEL-7B-MoT/ --safetensor-path model.safetensors --dataset 3ddet

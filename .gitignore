@@ -1,0 +1,17 @@
+wandb
+__pycache__
+.vscode
+notebooks
+results
+*.ipynb_checkpoints
+eval_results
+tests
+.DS_Store
+gradio.sh
+pretrained_model/
+dataset/
+training_data/
+*.zip
+*.out
+*.pkl
+*.safetensors
