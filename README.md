@@ -110,7 +110,11 @@ If you find this work useful in your research, please consider citing:
 }
 ```
 
-## License
+## 🧡 Acknowledgements
+
+Our implementation is built upon [Bagel](https://github.com/bytedance-seed/BAGEL). We appreciate their great work.
+
+## 📄 License
 
 ```
 Copyright (C) 2025 AIDC-AI
