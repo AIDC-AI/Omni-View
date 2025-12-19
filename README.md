@@ -1,3 +1,19 @@
+---
+license: apache-2.0
+language:
+- en
+base_model:
+- ByteDance-Seed/BAGEL-7B-MoT
+tags:
+- omni
+- 3d
+- generation
+- understanding
+- multi-modal
+---
+
+
+
 <div align="center">
 
 # Omni-View: Unlocking How Generation Facilitates Understanding in Unified 3D Model based on Multiview images 
@@ -23,7 +39,7 @@
 <div align="center">
     <a href="https://jkhu29.github.io/omni_view/"><strong>Project Page</strong></a> |
     <a href="https://arxiv.org/abs/2511.07222"><strong>Paper</strong></a> |
-    <a href="https://huggingface.co/AIDC-AI/Omni-View"><strong>Model</strong></a> 
+  <a href="https://huggingface.co/AIDC-AI/Omni-View/tree/main"><strong>Model</strong></a> 
 </div>
 
 <br>
@@ -55,7 +71,7 @@ pip install flash_attn==2.7.4 --no-build-isolation
 # BAGEL, configs and VAE
 from huggingface_hub import snapshot_download
 
-save_dir = "./pretrained_model"
+save_dir = "./pretrained_model/BAGEL-7B-MoT/"
 repo_id = "ByteDance-Seed/BAGEL-7B-MoT"
 cache_dir = save_dir + "/cache"
 
@@ -113,6 +129,7 @@ If you find this work useful in your research, please consider citing:
 ## 🧡 Acknowledgements
 
 Our implementation is built upon [Bagel](https://github.com/bytedance-seed/BAGEL). We appreciate their great work.
+
 
 ## 📄 License
 

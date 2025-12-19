@@ -8,7 +8,25 @@ Download json files from [here](https://huggingface.co/AIDC-AI/Omni-View/tree/ma
 
 Download metadata from [EmbodiedScan](https://github.com/OpenRobotLab/EmbodiedScan/tree/main/data). You need to fill out the official form to get the access to the dataset. Move the `embodiedscan_infos_*.pkl` to `./dataset/eval/embodiedscan`.
 
-Download images from [Video3DLLM](https://huggingface.co/datasets/zd11024/Video-3D-LLM_data). Move the `scannet` to `./dataset/eval/`.
+Download images from [Video3DLLM](https://huggingface.co/datasets/zd11024/Video-3D-LLM_data). Then, 
+
+```shell
+cd Video-3D-LLM_data
+# unzip posed images
+cat posed_images_part* > posed_images.tar.gz
+tar -xzf posed_images.tar.gz
+# unzip mask
+unzip mask.zip
+# unzip pcd
+tar -xzf pcd_with_object_aabbs.tar.gz
+
+mkdir scannet
+mv posed_images/ scannet/
+mv mask/ scannet/
+mv data/scannet/pcd_with_object_aabbs/ scannet/
+```
+
+Move the `scannet` to `./dataset/eval/`.
 
 The whole file structure under `./dataset/eval/` will be as follows.
 
