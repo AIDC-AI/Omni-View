@@ -1,19 +1,3 @@
----
-license: apache-2.0
-language:
-- en
-base_model:
-- ByteDance-Seed/BAGEL-7B-MoT
-tags:
-- omni
-- 3d
-- generation
-- understanding
-- multi-modal
----
-
-
-
 <div align="center">
 
 # Omni-View: Unlocking How Generation Facilitates Understanding in Unified 3D Model based on Multiview images 
